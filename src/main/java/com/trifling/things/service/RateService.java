@@ -83,7 +83,7 @@ public class RateService {
         int movieNum = rate.getMovieNum();
         boolean flag = rateMapper.rateDelete(rateNum);
 //        log.info("삭제 서비스 {} ",rateNum);
-//        rateMapper.pointMinus(rate.getUserNum());
+        rateMapper.pointMinus(rate.getUserNum());
         return getRateList("movie", movieNum, new Page(1,10));
     }
 
