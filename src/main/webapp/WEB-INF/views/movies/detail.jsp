@@ -601,6 +601,7 @@
 
             getRateList();
 
+
             ratePostButton();
 
             makePageButtonClickEvent();
